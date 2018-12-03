@@ -1,12 +1,12 @@
 
 import styled from 'styled-components';
-import { gradientBackground, font } from '../mixins'
+import { gradientBackground, fontSecondary } from '../mixins'
 
 export const Wrapper = styled.footer`
   width: 100%;
   height: auto;
   padding: 30px;
-  ${font};
+  ${fontSecondary};
   background: linear-gradient(to right, #434343,#000);
   /* ::after {
     ${gradientBackground};
@@ -27,28 +27,31 @@ export const FooterSection = styled.div`
   flex: 1;
   height: 100%;
   padding: 20px;
-  text-align: left;
+  text-align: center;
 `
 export const Header = styled.h3`
   color: #fff;
+  font-size: 0.8em;
 `
 export const FooterNavLink = styled.p`
   padding: 10px;
   font-weight: 300;
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: #fff;
+  cursor: pointer;
+  :hover {
+    color: #ccc;
+  }
 `
 export const IconGroup = styled.div`
-  width: 100%;
-  padding: 10px;
-  text-align: left;
+  margin: 10px 0;
 `
 export const Icon = styled.span`
   color: #fff;
-  margin: 0 15px;
   text-align: center;
+  margin: 10px;
+  cursor: pointer;
   :hover {
-    cursor: pointer;
     color: #ccc;
   }
 `

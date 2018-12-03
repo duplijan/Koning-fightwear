@@ -5,20 +5,19 @@ import background from '../../assets/mma.jpg'
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 100vh;
+  min-height: 80vh;
   /* //overflow: hidden; */
   position: relative;
   /* font-family: 'Montserrat Alternates', sans-serif; */
   ${fontPrimary}
+  background: black;
   background-image: url(${background});
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 100%;
-  opacity: 0.8;
-  /* ::after {
-    ${gradientBackground};
-  } */
+  background-position: ${props => props.center ? '50% 30%' : 'left center' };
+  opacity: 0.7;
+
 `
 export const Main = styled.section`
   width: 80%;
@@ -65,10 +64,11 @@ export const NavButton = styled.a`
 `
 export const Card = styled.div`
   width: 45%;
-  height: 90%;
+  min-height: 60%;
   background-color: white;
   opacity: 0.9;
   border-radius: 10px;
+  padding: 20px;
   box-shadow: 0px 5px 15px rgb(250,250,250,0.1);
 `
 export const Header = styled.h1`
@@ -86,15 +86,15 @@ export const SubHeader = styled.h4`
   font-weight: light;
   text-align: center;
 `
-export const StoreButton = styled.span`
+export const Button = styled.span`
   width: 60%;
-  height: auto;
+  min-height: 80%;
   padding: 30px;
   background: red;
   color: #fff;
   border-radius: 10px;
   box-shadow: 0px 3px 10px rgb(0,0,0,0.2);
-  margin: 150px auto;
+  margin: 20px auto;
   display: block;
   position: relative;
   text-align: center;

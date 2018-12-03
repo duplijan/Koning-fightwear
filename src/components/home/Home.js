@@ -1,10 +1,13 @@
 import React from 'react'
 import Footer from '../footer/Footer'
 import About from '../about/About'
+import AboutMore from '../about/AboutMore'
+import Contact from '../about/AboutMore'
+
 
 import { Wrapper, Main, Navigation, NavList,
         NavItem, NavButton, Card, Header, SubHeader,
-        StoreButton
+        Button
 } from './Home-styled-components'
 
 const Home = () => {
@@ -27,12 +30,11 @@ const Home = () => {
           <Card>
             <Header>KONING</Header>
             <SubHeader>-fightwear-</SubHeader>
-            <StoreButton>OUR STORE</StoreButton>
-            <SubHeader style={{marginTop: '-130px', color: '#000'}}>Make a difference</SubHeader>
+            <Button>OUR STORE</Button>
+            <SubHeader style={{marginTop: '100px', color: '#000'}}>Make a difference</SubHeader>
           </Card>
         </Main>
       </Wrapper>
-      <About />
       <Footer />
     </div>
   )

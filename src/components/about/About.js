@@ -4,7 +4,7 @@ import background from '../../assets/about.jpg'
 
 import {Wrapper, Main, Navigation, NavList,
         NavItem, NavButton, Card, Header, SubHeader,
-        StoreButton
+        Button
 } from '../home/Home-styled-components'
 
 import {Content, Text} from './About-styled-components'
@@ -36,7 +36,7 @@ const About = () => {
               Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla facilisi. Suspendisse nunc arcu, facilisis sed enim id, rutrum sagittis neque. Etiam ac tellus et libero semper euismod...
             </Text>
           </Content>
-          <StoreButton style={{marginTop: '30px'}}>READ MORE..</StoreButton>
+          <Button style={{marginTop: '30px'}}>READ MORE..</Button>
         </Card>
       </Main>
     </Wrapper>
