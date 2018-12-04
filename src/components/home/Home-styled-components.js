@@ -5,7 +5,7 @@ import background from '../../assets/mma.jpg'
 
 export const Wrapper = styled.div`
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vh;
   /* //overflow: hidden; */
   position: relative;
   /* font-family: 'Montserrat Alternates', sans-serif; */
@@ -23,9 +23,11 @@ export const Main = styled.section`
   width: 80%;
   height: 80%;
   position: relative;
-  top: 50%;
+  margin: 0 auto;
+  padding: 50px;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 `
 export const Navigation = styled.div`
   width: 100%;
@@ -88,7 +90,6 @@ export const SubHeader = styled.h4`
 `
 export const Button = styled.span`
   width: 60%;
-  min-height: 80%;
   padding: 30px;
   background: red;
   color: #fff;

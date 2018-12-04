@@ -7,7 +7,7 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import background from '../../assets/contact-bg.jpg'
 import { Wrapper, Main, Button, Header } from '../home/Home-styled-components'
 
-import { Wrapp, FormGroup, ContactForm,Input,TextArea,ContactHeader} from './Contact-styled-components'
+import { Wrapp, FormGroup, ContactForm, Input, TextArea, ContactHeader} from './Contact-styled-components'
 
 const Contact = () => {
   return (
