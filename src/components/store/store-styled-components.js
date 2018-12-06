@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 import carousel3 from '../../assets/about-bjj.jpg'
 
 export const Wrapper = styled.div`
@@ -13,7 +12,6 @@ export const CenterContainer = styled.div`
   height: auto;
   margin: 0 auto;
 `
-
 ///TOP NAVBAR< BUTTONS< SHOPPING CART ICON
 export const TopBar = styled.div`
   width: 100%;
@@ -22,6 +20,7 @@ export const TopBar = styled.div`
   //background: linear-gradient(to right, #434343,#000);
   background: linear-gradient(to left, #bdc3c7, #2c3e50);
 `
+<<<<<<< HEAD
 
 // export const Logo = styled.img.attrs({
 //   src: ''
@@ -35,6 +34,16 @@ export const Logo = styled.span`
   text-align: left;
   display: inline-block;
 `
+=======
+// export const Logo = styled.span`
+//   width: 50%;
+//   text-align: left;
+//   display: inline-block;
+//   padding: 20px;
+//   color: #fff;
+// `
+
+>>>>>>> a47b878dc204a71807f2c0a70da45ce89c25841c
 export const TopBarButtons = styled.div`
     display: inline-block;
     width: 50%;
@@ -49,7 +58,6 @@ export const ShopCart = styled.div `
 `
 
 //MAIN NAVBAR AND NAVIGATION
-
 export const Navigation = styled.div`
   width: 100%;
   height: auto;
@@ -71,7 +79,6 @@ export const NavItem = styled.span`
   color: #333333;
   cursor: pointer;
   background: #ccc;
-
   transition: all 0.2s;
   :hover {
     transform: translateY(-8%);
@@ -80,7 +87,6 @@ export const NavItem = styled.span`
   }
 `
 //CAROUSEL
-
 export const CarouselContainer = styled.div`
   width: 100%;
   height: auto;
