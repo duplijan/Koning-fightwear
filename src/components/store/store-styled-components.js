@@ -18,26 +18,27 @@ export const CenterContainer = styled.div`
 export const TopBar = styled.div`
   width: 100%;
   height: auto;
-  padding: 10px;
-  background: linear-gradient(to right, #434343,#000);
-`
-export const Logo = styled.img.attrs({
-  src: ''
-})`
-  width: 20%;
-  height: 20%;
+  padding: 20px;
+  //background: linear-gradient(to right, #434343,#000);
+  background: linear-gradient(to left, #bdc3c7, #2c3e50);
 `
 
-// export const Logo = styled.span`
-//   width: 50%;
-//   text-align: left;
-//   display: inline-block;
-//   padding: 20px;
-//   color: #fff;
+// export const Logo = styled.img.attrs({
+//   src: ''
+// })`
+//   width: 20%;
+//   height: 20%;
 // `
+
+export const Logo = styled.span`
+  width: 50%;
+  text-align: left;
+  display: inline-block;
+`
 export const TopBarButtons = styled.div`
     display: inline-block;
     width: 50%;
+    height: 100%;
     text-align: right;
 `
 export const ShopCart = styled.div `

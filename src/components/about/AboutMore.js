@@ -26,7 +26,6 @@ const AboutMore = () => {
             <NavButton>login</NavButton>
           </NavList>
         </Navigation>
-
         <Section left>
           <ImageContainer>
             <Image src={`${mma}`} />

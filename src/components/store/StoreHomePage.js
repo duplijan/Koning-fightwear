@@ -32,7 +32,10 @@ class StoreHomePage extends Component {
       <Wrapper>
         <TopBar>
           <CenterContainer>
-            <img src={logo} alt='' />
+            <Logo>
+              <img src={logo} alt='logo' />
+            </Logo>
+
             <TopBarButtons>
               <NavButton primary>sign up</NavButton>
               <NavButton>login</NavButton>
