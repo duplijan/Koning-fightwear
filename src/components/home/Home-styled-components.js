@@ -17,7 +17,6 @@ export const Wrapper = styled.div`
   background-size: cover;
   background-position: ${props => props.center ? '50% 30%' : 'left center' };
   opacity: 0.7;
-
 `
 export const Main = styled.section`
   width: 80%;

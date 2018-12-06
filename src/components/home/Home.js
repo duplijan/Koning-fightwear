@@ -1,9 +1,5 @@
 import React from 'react'
 import Footer from '../footer/Footer'
-import About from '../about/About'
-import AboutMore from '../about/AboutMore'
-import Contact from '../about/AboutMore'
-
 
 import { Wrapper, Main, Navigation, NavList,
         NavItem, NavButton, Card, Header, SubHeader,

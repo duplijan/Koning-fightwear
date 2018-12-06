@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import { Router, Route, Switch } from 'react-router-dom'
 import './App.css';
 
+//COMPONENTS
 import About from './components/about/About'
 import AboutMore from './components/about/AboutMore'
 import Contact from './components/contact/Contact'
 import Home from './components/home/Home'
 import Login from './components/login/Login'
+import StoreHomePage from './components/store/StoreHomePage'
 
 class App extends Component {
   render() {
@@ -17,6 +19,7 @@ class App extends Component {
         <AboutMore />
         <Contact />
         <Login />
+        <StoreHomePage />
       </div>
     );
   }
