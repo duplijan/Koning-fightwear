@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
-import Carousel from 'nuka-carousel';
+import CarouselWrapper from './CarouselWrapper'
+
 import background from '../../assets/mma.jpg'
-import carousel1 from '../../assets/carousel1.jpg'
-import carousel2 from '../../assets/carousel2.jpg'
-import carousel3 from '../../assets/about-bjj.jpg'
 import card1 from '../../assets/card1.jpg'
 import card2 from '../../assets/card2.jpg'
 import cardS1 from '../../assets/cardS1.jpg'
@@ -11,22 +9,22 @@ import cardS2 from '../../assets/cardS2.jpg'
 import cardS3 from '../../assets/cardS3.png'
 import cardS4 from '../../assets/cardS4.png'
 import logo from '../../assets/logo-light.png'
+import card3 from '../../assets/carousel2.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faShoppingCart} from '@fortawesome/free-solid-svg-icons'
 
-import { Main,NavButton } from '../home/Home-styled-components'
+import { Main, NavButton } from '../home/Home-styled-components'
 
 import { Wrapper, TopBar, Logo, CenterContainer, TopBarButtons, ShopCart, Navigation, NavList,
-        NavItem, CarouselContainer,CarouselItem, CarouselImage, CarouselText,
-        CardsContaioner, Card, CardText,
-        Header
+        NavItem, CarouselContainer,CarouselItem, CarouselImage, CarouselText, CarouselButton,
+        CardsContaioner, Card, CardText, Header,
+        Section
 } from './store-styled-components'
 
 class StoreHomePage extends Component {
   constructor(){
     super()
   }
-
   render (){
     return (
       <Wrapper>
@@ -35,11 +33,12 @@ class StoreHomePage extends Component {
             <Logo>
               <img src={logo} alt='logo' />
             </Logo>
-
             <TopBarButtons>
               <NavButton primary>sign up</NavButton>
               <NavButton>login</NavButton>
-              <ShopCart><FontAwesomeIcon icon={faShoppingCart} />(0)</ShopCart>
+              <ShopCart>
+                <FontAwesomeIcon icon={faShoppingCart} />(0)
+              </ShopCart>
             </TopBarButtons>
           </CenterContainer>
         </TopBar>
@@ -54,25 +53,9 @@ class StoreHomePage extends Component {
               <NavItem>CLOTHING</NavItem>
             </NavList>
           </Navigation>
-          <CarouselContainer>
-            <Carousel>
-              <CarouselItem>
-                <CarouselText>STAY FOCUS </CarouselText>
-                <CarouselImage src={`${carousel2}`} />
-              </CarouselItem>
-              <CarouselItem>
-                <CarouselText>STAY FOCUS </CarouselText>
-                <CarouselImage src={`${carousel1}`} />
-
-              </CarouselItem>
-              <CarouselItem>
-                <CarouselText>STAY FOCUS </CarouselText>
-                <CarouselImage src={`${carousel3}`} />
-              </CarouselItem>
-            </Carousel>
-          </CarouselContainer>
+          <CarouselWrapper />
           <CardsContaioner large>
-            <Card large style={{backgroundImage: `url(${carousel2})`}}>
+            <Card large style={{backgroundImage: `url(${card3})`}}>
               <CardText top>BJJ</CardText>
             </Card>
             <Card large style={{backgroundImage: `url(${card1})`}}>
@@ -98,7 +81,7 @@ class StoreHomePage extends Component {
             </Card>
           </CardsContaioner>
         </Main>
-
+        <Section></Section>
       </Wrapper>
     )
   }

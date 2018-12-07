@@ -1,5 +1,6 @@
 import React from 'react'
 import Footer from '../footer/Footer'
+import Navbar from './Navigation'
 
 import { Wrapper, Main, Navigation, NavList,
         NavItem, NavButton, Card, Header, SubHeader,
@@ -11,18 +12,7 @@ const Home = () => {
     <div>
       <Wrapper>
         <Main>
-          <Navigation>
-            <NavList>
-              <NavItem>Home</NavItem>
-              <NavItem>About</NavItem>
-              <NavItem>Store</NavItem>
-              <NavItem>Contact</NavItem>
-            </NavList>
-            <NavList style={{width: '50%' }}>
-              <NavButton primary>sign up</NavButton>
-              <NavButton>login</NavButton>
-            </NavList>
-          </Navigation>
+          <Navbar />
           <Card>
             <Header>KONING</Header>
             <SubHeader>-fightwear-</SubHeader>

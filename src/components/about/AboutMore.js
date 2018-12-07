@@ -2,10 +2,8 @@
 import React from 'react'
 import { Main, Navigation, NavList,
         NavItem, NavButton } from '../home/Home-styled-components'
-
 import {Content, Text, Section, AboutButton,AboutWrapper, AbouHeader, ImageContainer, Image} from './About-styled-components'
 
-import { gradientBackground } from '../mixins'
 import bjj from '../../assets/about-bjj.jpg'
 import mma from '../../assets/about-mma.jpg'
 
