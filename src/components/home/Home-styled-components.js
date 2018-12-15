@@ -4,15 +4,16 @@ import background from '../../assets/mma.jpg'
 
 export const Wrapper = styled.div`
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
-  background: black;
+  background: #000;
   background-image: url(${background});
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   background-position: ${props => props.center ? '50% 30%' : 'left center' };
-  opacity: 0.7;
+  opacity: 0.8;
 `
 export const Main = styled.section`
   width: 80%;
@@ -22,7 +23,7 @@ export const Main = styled.section`
 `
 export const Card = styled.div`
   width:50%;
-  height: 100%;
+  height: 600px;
   background-color: white;
   opacity: 0.9;
   border-radius: 10px;
@@ -58,7 +59,8 @@ export const Button = styled.span`
   cursor: pointer;
   transition: all 0.3s;
   :hover {
-    background: #fff;
+    background: #eee;
     color: red;
+    font-weight: bold;
   }
 `

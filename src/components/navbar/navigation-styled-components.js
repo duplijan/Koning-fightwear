@@ -6,7 +6,7 @@ export const StyledLink = styled(Link)`
   &:focus, &:hover, &:visited, &:link, &:active {
       text-decoration: none;
   }
-`;
+`
 export const Navigation = styled.div`
   position: absolute;
   top: 0;
@@ -23,25 +23,30 @@ export const NavigationWrapper = styled.div`
 export const NavList = styled.div`
   flex: 1;
 `
-export const ButtonList = styled.div`
+export const ButtonList = styled.div`\
   flex: 1;
+  margin-top: 5px;
   text-align: right;
 `
 export const NavItem = styled.a`
+
+  font-size: 1.2em;
   padding: 5px 7px;
-  margin: 0 5px;
-  cursor: pointer;
+  margin: 5px 10px;
   color: #fff;
+  transition: all 0.2s;
   :hover {
-    border-bottom: 2px solid red;
+    max-width: 50px
+    border-bottom: 3px solid red;
+    color: red;
   }
 `
 export const NavButton = styled.a`
   color: ${props => props.primary ? '#FFF' : '#CCC'};
   border: ${props => props.primary ? '5px solid red' : '5px solid #CCC'};
   padding: 5px 15px;
-  font-size: 0.8em;
-  margin: 0 5px;
+  font-size: 1em;
+  margin: 10px;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.2s;

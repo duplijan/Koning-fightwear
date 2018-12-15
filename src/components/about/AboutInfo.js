@@ -1,21 +1,20 @@
+import React, { Fragment } from 'react'
 
-import React from 'react'
-import { Main} from '../home/Home-styled-components'
-import {Content, Text, Section, AboutButton,AboutWrapper, AbouHeader, ImageContainer, Image} from './About-styled-components'
-
+import {Content, Text, Header, Section, AboutWrapper, ImageContainer, Image} from './About-styled-components'
+//AboutButton
 import bjj from '../../assets/about-bjj.jpg'
 import mma from '../../assets/about-mma.jpg'
 
-const AboutMore = () => {
+const  About2 = () => {
   return (
-    <AboutWrapper>
-      <Main>
-        <Section left>
+    <Fragment>
+      <AboutWrapper>
+        <Section>
           <ImageContainer>
             <Image src={`${mma}`} />
           </ImageContainer>
-          <AbouHeader>MMA and Boxing</AbouHeader>
-          <Content primary>
+          <Content>
+            <Header>MMA and Boxing</Header>
             <Text>
             In ac aliquet dolor, a malesuada mi. In ut consequat odio. Sed eget turpis sit amet est fermentum placerat a eu lacus. Nunc tempus, elit at convallis cursus, justo mi faucibus erat, ac fermentum tortor nulla sit amet sapien.
             </Text>
@@ -23,24 +22,22 @@ const AboutMore = () => {
             In ac aliquet dolor, a malesuada mi. In ut consequat odio. Sed eget turpis sit amet est fermentum placerat a eu lacus. Nunc tempus, elit at convallis cursus, justo mi faucibus erat, ac fermentum tortor nulla sit amet sapien.
             </Text>
           </Content>
-          <AboutButton>Find the perfect fit for you</AboutButton>
         </Section>
         <Section>
-          <AbouHeader>Brazilian Jiu Jitsu</AbouHeader>
-          <Content primary>
+          <Content>
+            <Header>Brazilian Jiu Jitsu</Header>
             <Text>In ac aliquet dolor, a malesuada mi. In ut consequat odio. Sed eget turpis sit amet est fermentum placerat a eu lacus. Nunc tempus, elit at convallis cursus, justo mi faucibus erat, ac fermentum tortor nulla sit amet sapien.</Text>
             <Text>
               In ac aliquet dolor, a malesuada mi. In ut consequat odio. Sed eget turpis sit amet est fermentum placerat a eu lacus. Nunc tempus, elit at convallis cursus, justo mi faucibus erat, ac fermentum tortor nulla sit amet sapien.
             </Text>
           </Content>
-          <AboutButton>Get the best equipment</AboutButton>
           <ImageContainer>
             <Image src={`${bjj}`} />
           </ImageContainer>
         </Section>
-      </Main>
-    </AboutWrapper>
+      </AboutWrapper>
+    </Fragment>
   )
 }
 
-export default AboutMore;
+export default About2;

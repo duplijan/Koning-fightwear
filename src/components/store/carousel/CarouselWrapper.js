@@ -9,10 +9,10 @@ import carousel3 from '../../../assets/about-bjj.jpg'
 
 import { CarouselContainer, CarouselItem, CarouselImage, CarouselText, CarouselButton } from './carousel-components'
 
-const CarouselWrapper = () => {
+const CarouselWrapper = ( props ) => {
     return (
       <CarouselContainer>
-        <Carousel  wrapAround={ ({wrapAround: false})}
+        <Carousel  wrapAround={ ({wrapAround: true})}
             renderCenterLeftControls={({ previousSlide }) => (
               <CarouselButton rotate onClick={previousSlide}>
                 <FontAwesomeIcon icon={faAngleDoubleDown} />
