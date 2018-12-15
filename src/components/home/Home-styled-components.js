@@ -18,16 +18,16 @@ export const Main = styled.section`
   width: 80%;
   height: 80%;
   margin: 0 auto;
-  padding: 50px;
+  padding: 200px 20px;
 `
 export const Card = styled.div`
   width:50%;
-  height: 60%;
+  height: 100%;
   background-color: white;
   opacity: 0.9;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0px 5px 15px rgb(250,250,250,0.1);
+  box-shadow: 0px 5px 15px 0 rgb(0,0,0,1);
 `
 export const Header = styled.h1`
   font-size: 3.5em;
