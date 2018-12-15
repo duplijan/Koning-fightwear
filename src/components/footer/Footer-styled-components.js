@@ -1,24 +1,15 @@
 
-import styled from 'styled-components';
-import { gradientBackground, fontSecondary } from '../mixins'
+import styled from 'styled-components'
 
 export const Wrapper = styled.footer`
   width: 100%;
   height: auto;
   padding: 30px;
-  ${fontSecondary};
   background: linear-gradient(to right, #434343,#000);
-  /* ::after {
-    ${gradientBackground};
-  } */
 `
 export const FooterNav = styled.div`
   width:90%;
   height: auto;
-  /* position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   margin: 0 auto;
   display: flex;
   flex-direction: row;

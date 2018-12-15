@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { gradientBackground, fontSecondary,fontPrimary } from '../mixins'
+import { fontSecondary,fontPrimary } from '../mixins'
 
-//ADJUSTED COMPONENTS
 import { Wrapper, Button, Header } from '../home/Home-styled-components'
 
 //ADJUSTED COMPONENTS

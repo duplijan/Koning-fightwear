@@ -1,29 +1,15 @@
 
 import React from 'react'
-import { Main, Navigation, NavList,
-        NavItem, NavButton } from '../home/Home-styled-components'
+import { Main} from '../home/Home-styled-components'
 import {Content, Text, Section, AboutButton,AboutWrapper, AbouHeader, ImageContainer, Image} from './About-styled-components'
 
 import bjj from '../../assets/about-bjj.jpg'
 import mma from '../../assets/about-mma.jpg'
 
-console.log()
 const AboutMore = () => {
   return (
     <AboutWrapper>
       <Main>
-        <Navigation>
-          <NavList>
-            <NavItem>Home</NavItem>
-            <NavItem>About</NavItem>
-            <NavItem>Store</NavItem>
-            <NavItem>Contact</NavItem>
-          </NavList>
-          <NavList style={{width: '50%' }}>
-            <NavButton primary>sign up</NavButton>
-            <NavButton>login</NavButton>
-          </NavList>
-        </Navigation>
         <Section left>
           <ImageContainer>
             <Image src={`${mma}`} />
@@ -56,4 +42,5 @@ const AboutMore = () => {
     </AboutWrapper>
   )
 }
+
 export default AboutMore;

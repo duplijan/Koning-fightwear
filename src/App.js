@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css';
 
@@ -9,27 +9,26 @@ import Contact from './components/contact/Contact'
 import Home from './components/home/Home'
 import Login from './components/login/Login'
 import StoreHomePage from './components/store/StoreHomePage'
-import Navigation from './components/home/Navigation'
-
-
-// <About />
-// <AboutMore />
-// <Contact />
-// <Login />
-// <StoreHomePage />
+import Navigation from './components/navbar/Navigation'
+import Footer from './components/footer/Footer'
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <Fragment>
           <Navigation />
-          <Route exact path="/" component={Home} />
-          <hr />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/about-more" component={AboutMore} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/store" component={StoreHomePage} />
+            <Route path="/login" component={Login} />
+          </Switch>
 
-
-        </div>
-
+          <Footer />
+        </Fragment>
       </Router>
     );
   }

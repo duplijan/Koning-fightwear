@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import CarouselWrapper from './CarouselWrapper'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart} from '@fortawesome/free-solid-svg-icons'
 
-import background from '../../assets/mma.jpg'
+import CarouselWrapper from './carousel/CarouselWrapper'
 import card1 from '../../assets/card1.jpg'
 import card2 from '../../assets/card2.jpg'
 import cardS1 from '../../assets/cardS1.jpg'
@@ -10,37 +11,23 @@ import cardS3 from '../../assets/cardS3.png'
 import cardS4 from '../../assets/cardS4.png'
 import logo from '../../assets/logo-light.png'
 import card3 from '../../assets/carousel2.jpg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart} from '@fortawesome/free-solid-svg-icons'
 
-import { Main, NavButton } from '../home/Home-styled-components'
-
-import { Wrapper, TopBar, Logo, CenterContainer, TopBarButtons, ShopCart, Navigation, NavList,
-        NavItem, CarouselContainer,CarouselItem, CarouselImage, CarouselText, CarouselButton,
-        CardsContaioner, Card, CardText, Header,
-        Section
+import { Main } from '../home/Home-styled-components'
+import { Wrapper, TopBar, Logo, Cart, Navigation, NavList, CartText, NavItem, CardsContaioner, Card, CardText, Header, Section
 } from './store-styled-components'
 
 class StoreHomePage extends Component {
-  constructor(){
-    super()
-  }
   render (){
     return (
       <Wrapper>
         <TopBar>
-          <CenterContainer>
-            <Logo>
-              <img src={logo} alt='logo' />
-            </Logo>
-            <TopBarButtons>
-              <NavButton primary>sign up</NavButton>
-              <NavButton>login</NavButton>
-              <ShopCart>
-                <FontAwesomeIcon icon={faShoppingCart} />(0)
-              </ShopCart>
-            </TopBarButtons>
-          </CenterContainer>
+          <Logo>
+            <img src={logo} alt='logo' />
+          </Logo>
+          <Cart>
+            <CartText> your shopping</CartText>
+            <FontAwesomeIcon icon={faShoppingCart} />(0)
+          </Cart>
         </TopBar>
         <Main style={{padding: 0}}>
           <Navigation>

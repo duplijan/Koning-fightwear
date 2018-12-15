@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import background from '../../assets/contact-bg.jpg'
 import { Wrapper, Header } from '../home/Home-styled-components'
 
-
-
 export const Wrapp = styled(Wrapper)`
   background-image: url(${background});
   background-size: contain;

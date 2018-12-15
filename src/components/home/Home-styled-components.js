@@ -1,15 +1,11 @@
 
-import styled from 'styled-components';
-import { gradientBackground, fontPrimary } from '../mixins'
+import styled from 'styled-components'
 import background from '../../assets/mma.jpg'
 
 export const Wrapper = styled.div`
   width: 100%;
   min-height: 100vh;
-  /* //overflow: hidden; */
   position: relative;
-  /* font-family: 'Montserrat Alternates', sans-serif; */
-  ${fontPrimary}
   background: black;
   background-image: url(${background});
   background-size: 100%;
@@ -21,51 +17,12 @@ export const Wrapper = styled.div`
 export const Main = styled.section`
   width: 80%;
   height: 80%;
-  position: relative;
   margin: 0 auto;
   padding: 50px;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-`
-export const Navigation = styled.div`
-  width: 100%;
-  height: auto;
-  padding: 10px 0;
-`
-export const NavList = styled.div`
-  width: 45%;
-  display: inline-block;
-  height: auto;
-  margin-bottom: 10px;
-  text-align: right;
-`
-export const NavItem = styled.a`
-  padding: 5px 7px;
-  margin: 0 5px;
-  cursor: pointer;
-  color: #fff;
-  :hover {
-    border-bottom: 2px solid red;
-  }
-`
-export const NavButton = styled.a`
-  color: ${props => props.primary ? '#FFF' : '#CCC'};
-  border: ${props => props.primary ? '5px solid red' : '5px solid #CCC'};
-  padding: 5px 15px;
-  font-size: 0.8em;
-  margin: 0 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.2s;
-  :hover {
-    background: ${props => props.primary ? 'red' : '#CCC'};
-    color: #fff;
-  }
 `
 export const Card = styled.div`
-  width: 45%;
-  min-height: 60%;
+  width:50%;
+  height: 60%;
   background-color: white;
   opacity: 0.9;
   border-radius: 10px;

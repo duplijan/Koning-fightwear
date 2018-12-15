@@ -1,30 +1,14 @@
 import React from 'react'
-import Footer from '../footer/Footer'
 import background from '../../assets/about.jpg'
 
-import {Wrapper, Main, Navigation, NavList,
-        NavItem, NavButton, Card, Header, SubHeader,
-        Button
-} from '../home/Home-styled-components'
-
-import {Content, Text} from './About-styled-components'
+import { Wrapper, Main, Card, Header, SubHeader,Button} from '../home/Home-styled-components'
+import { StyledLink } from '../navbar/navigation-styled-components'
+import { Content, Text} from './About-styled-components'
 
 const About = () => {
   return (
     <Wrapper style={{backgroundImage:`url( ${background})`}}>
       <Main>
-        <Navigation>
-          <NavList>
-            <NavItem>Home</NavItem>
-            <NavItem>About</NavItem>
-            <NavItem>Store</NavItem>
-            <NavItem>Contact</NavItem>
-          </NavList>
-          <NavList style={{width: '50%' }}>
-            <NavButton primary>sign up</NavButton>
-            <NavButton>login</NavButton>
-          </NavList>
-        </Navigation>
         <Card>
           <Header>ABOUT US</Header>
           <SubHeader>-the story begins-</SubHeader>
@@ -36,7 +20,10 @@ const About = () => {
               Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla facilisi. Suspendisse nunc arcu, facilisis sed enim id, rutrum sagittis neque. Etiam ac tellus et libero semper euismod...
             </Text>
           </Content>
-          <Button style={{marginTop: '30px'}}>READ MORE..</Button>
+          <StyledLink to="/about-more">
+            <Button style={{marginTop: '30px'}}>READ MORE..</Button>
+          </StyledLink>
+
         </Card>
       </Main>
     </Wrapper>

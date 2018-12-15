@@ -1,27 +1,22 @@
 import React from 'react'
-import Footer from '../footer/Footer'
-import Navbar from './Navigation'
-
-import { Wrapper, Main, Navigation, NavList,
-        NavItem, NavButton, Card, Header, SubHeader,
-        Button
-} from './Home-styled-components'
+import { Wrapper, Main, Card, Header, SubHeader,Button} from './Home-styled-components'
+import { StyledLink } from '../navbar/navigation-styled-components'
 
 const Home = () => {
   return (
     <div>
       <Wrapper>
         <Main>
-          <Navbar />
           <Card>
             <Header>KONING</Header>
             <SubHeader>-fightwear-</SubHeader>
-            <Button>OUR STORE</Button>
+            <StyledLink to="/store">
+              <Button>OUR STORE</Button>
+            </StyledLink>
             <SubHeader style={{marginTop: '100px', color: '#000'}}>Make a difference</SubHeader>
           </Card>
         </Main>
       </Wrapper>
-      <Footer />
     </div>
   )
 }
