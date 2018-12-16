@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 import { Wrapper, Button } from '../home/Home-styled-components'
 
-//ADJUSTED COMPONENTS
 export const  AboutButton = styled(Button)`
   margin: 10px auto;
 `
@@ -21,7 +20,6 @@ export const Header = styled.h1`
   text-align: left;
   border-bottom: 5px solid red;
 `
- //ABOUT-MORE PAGE
  export const Section = styled.div`
    width: 80%;
    height: auto;
