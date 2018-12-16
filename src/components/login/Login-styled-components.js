@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import background from '../../assets/login.jpg'
+import background from '../../assets/images/login.jpg'
 
 import { Wrapper, Header, Button } from '../home/Home-styled-components'
 import { Input } from '../contact/Contact-styled-components'
@@ -15,7 +15,7 @@ export const LoginHeader = styled(Header)`
   border-bottom: ${props => props.underline ? '5px solid red' : 'none'}
 `
 export const LoginForm = styled.form`
-  width: 60%;
+  width: 50%;
   padding: 50px 30px;
   position: relative;
   margin: 0 auto;
@@ -27,12 +27,16 @@ export const LoginInput= styled(Input)`
   display: block;
   width: 100%;
   padding: 10px;
-  margin: 15px 0;
+  margin: 25px 0;
   background: none;
   color: #fff;
   border: none;
   border-bottom: 3px solid red;
   border-radius: 3px;
+  &::-webkit-input-placeholder {
+    font-size: 1em;
+    color: #fff;
+}
 `
 export const LoginButton = styled(Button)`
   width: 100%;
@@ -57,9 +61,9 @@ export const Group = styled.div`
 `
 export const HelpButton = styled.p`
   font-weight: 200;
-  color: #ccc;
+  color: #eee;
   opacity: 0.5;
-  font-size: 0.8em;
+  font-size: 1em;
   padding: 5px;
   display: inline-block;
   width: 50%;

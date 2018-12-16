@@ -3,16 +3,16 @@ import Carousel from 'nuka-carousel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleDown} from '@fortawesome/free-solid-svg-icons'
 
-import carousel1 from '../../../assets/carousel1.jpg'
-import carousel2 from '../../../assets/carousel2.jpg'
-import carousel3 from '../../../assets/about-bjj.jpg'
+import carousel1 from '../../../assets/images/carousel1.jpg'
+import carousel2 from '../../../assets/images/carousel2.jpg'
+import carousel3 from '../../../assets/images/about-bjj.jpg'
 
 import { CarouselContainer, CarouselItem, CarouselImage, CarouselText, CarouselButton } from './carousel-components'
 
 const CarouselWrapper = ( props ) => {
     return (
       <CarouselContainer>
-        <Carousel  wrapAround={ ({wrapAround: true})}
+        <Carousel  wrapAround={ {wrapAround: true}}
             renderCenterLeftControls={({ previousSlide }) => (
               <CarouselButton rotate onClick={previousSlide}>
                 <FontAwesomeIcon icon={faAngleDoubleDown} />

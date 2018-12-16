@@ -6,11 +6,12 @@ import React from 'react'
 
 import { Button } from '../home/Home-styled-components'
 
-import { Wrapp, FormGroup, ContactForm, Input, TextArea, ContactHeader} from './Contact-styled-components'
+import { Wrapp, Center, FormGroup, ContactForm, Input, TextArea, ContactHeader} from './Contact-styled-components'
 
 const Contact = () => {
   return (
     <Wrapp>
+      <Center>
       <FormGroup>
         <ContactHeader>GET IN TOUCH</ContactHeader>
           <ContactForm>
@@ -20,6 +21,7 @@ const Contact = () => {
           <Button>send</Button>
         </ContactForm>
       </FormGroup>
+      </Center>
     </Wrapp>
   )
 }

@@ -5,7 +5,8 @@ export const Wrapper = styled.footer`
   width: 100%;
   height: auto;
   padding: 30px;
-  background: linear-gradient(to right, #434343,#000);
+  background: linear-gradient(to left, #434343,#000);
+  opacity: 0.8;
 `
 export const FooterNav = styled.div`
   width:90%;
@@ -22,12 +23,12 @@ export const FooterSection = styled.div`
 `
 export const Header = styled.h3`
   color: #fff;
-  font-size: 0.8em;
+  font-size: 1em;
 `
 export const FooterNavLink = styled.p`
   padding: 10px;
   font-weight: 300;
-  font-size: 0.7em;
+  font-size: 0.9em;
   color: #fff;
   cursor: pointer;
   :hover {

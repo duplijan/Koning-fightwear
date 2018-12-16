@@ -28,7 +28,7 @@ export const ButtonList = styled.div`\
   margin-top: 5px;
   text-align: right;
 `
-export const NavItem = styled.a`
+export const NavItem = styled.span`
 
   font-size: 1.2em;
   padding: 5px 7px;
@@ -41,7 +41,7 @@ export const NavItem = styled.a`
     color: red;
   }
 `
-export const NavButton = styled.a`
+export const NavButton = styled.span`
   color: ${props => props.primary ? '#FFF' : '#CCC'};
   border: ${props => props.primary ? '5px solid red' : '5px solid #CCC'};
   padding: 5px 15px;

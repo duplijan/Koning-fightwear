@@ -2,8 +2,8 @@ import React, { Fragment } from 'react'
 
 import {Content, Text, Header, Section, AboutWrapper, ImageContainer, Image} from './About-styled-components'
 //AboutButton
-import bjj from '../../assets/about-bjj.jpg'
-import mma from '../../assets/about-mma.jpg'
+import bjj from '../../assets/images/about-bjj.jpg'
+import mma from '../../assets/images/about-mma.jpg'
 
 const  About2 = () => {
   return (

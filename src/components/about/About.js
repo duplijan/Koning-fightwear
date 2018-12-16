@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import background from '../../assets/about.jpg'
+import background from '../../assets/images/about.jpg'
 import AboutInfo from './AboutInfo'
 
 import { Wrapper, Main, Card, Header, SubHeader,Button} from '../home/Home-styled-components'

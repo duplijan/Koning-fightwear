@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom'
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -42,7 +43,6 @@ export const Navigation = styled.div`
   margin: 50px 0;
 `
 export const NavList = styled.div`
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,18 +51,25 @@ export const NavList = styled.div`
   border-radius: 4px;
   box-shadow: 0 2px 10px rgb(0,0,0,0.1)
 `
-export const NavItem = styled.span`
-  padding: 10px;
+export const StyledLink = styled(Link)`
   flex: 1;
+  padding: 10px;
+  text-decoration: none;
+  &:focus, &:hover, &:visited, &:link, &:active {
+      text-decoration: none;
+  }
+`
+export const NavItem = styled.span`
+  flex: 1;
+  font-size: 1.2em;
   color: #333333;
   cursor: pointer;
-  background: #ccc;
-
+  padding: 10px 30px;
   transition: all 0.2s;
   :hover {
-    transform: translateY(-8%);
-    box-shadow: 0 1px  10px rgb(0,0,0,0.2);
+    box-shadow: 0 1px  10px rgb(0,0,0,0.3);
     color: red;
+    background-color: #d1d1d1;
   }
 `
 //FAVOURITE CATEGORIES CARDS

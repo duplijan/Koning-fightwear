@@ -23,11 +23,11 @@ export const Header = styled.h1`
 `
  //ABOUT-MORE PAGE
  export const Section = styled.div`
-   width: 90%;
+   width: 80%;
    height: auto;
    margin: 0 auto;
    opacity: 0.9;
-   padding: 30px;
+   padding: 50px 20px; 
    display: flex;
    align-items: center;
    justify-content: center;
@@ -48,7 +48,7 @@ export const Text = styled.p`
 `
 export const ImageContainer = styled.div`
   flex: 1;
-  margin: 10px auto;
+  //margin: 10px auto;
   height: auto;
   opacity: 0.9;
   box-shadow: 0px 10px 15px -6 rgb(0,0,0,0.5);

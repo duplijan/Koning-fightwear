@@ -1,6 +1,6 @@
 
 import styled from 'styled-components'
-import background from '../../assets/mma.jpg'
+import background from '../../assets/images/mma.jpg'
 
 export const Wrapper = styled.div`
   width: 100%;

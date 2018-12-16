@@ -1,7 +1,8 @@
 import React from 'react'
 import { Navigation, NavigationWrapper, NavList, ButtonList, NavItem, NavButton, StyledLink} from './navigation-styled-components'
 
-const Navbar = ({match}) => {
+const Navbar = (props) => {
+  console.log(props)
   return (
     <Navigation>
       <NavigationWrapper>
@@ -12,14 +13,13 @@ const Navbar = ({match}) => {
           <StyledLink to="/about">
             <NavItem>About</NavItem>
           </StyledLink>
-          <StyledLink to="/store">
+          <StyledLink to="/store-Homepage">
             <NavItem>Store</NavItem>
           </StyledLink>
           <StyledLink to="/contact">
             <NavItem>Contact</NavItem>
           </StyledLink>
         </NavList>
-
         <ButtonList>
           <StyledLink to="/sign up">
             <NavButton primary>sign up</NavButton>
@@ -28,7 +28,6 @@ const Navbar = ({match}) => {
             <NavButton>login</NavButton>
           </StyledLink>
         </ButtonList>
-
       </NavigationWrapper>
     </Navigation>
   )
