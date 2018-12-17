@@ -40,6 +40,7 @@ export const Cart = styled.div `
 export const Navigation = styled.div`
   width: 100%;
   height: auto;
+  padding: 50px;
   margin: 50px 0;
 `
 export const NavList = styled.div`

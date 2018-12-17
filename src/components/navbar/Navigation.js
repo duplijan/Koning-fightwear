@@ -1,8 +1,7 @@
 import React from 'react'
 import { Navigation, NavigationWrapper, NavList, ButtonList, NavItem, NavButton, StyledLink} from './navigation-styled-components'
 
-const Navbar = (props) => {
-  console.log(props)
+const Navbar = () => {
   return (
     <Navigation>
       <NavigationWrapper>

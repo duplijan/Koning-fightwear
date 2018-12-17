@@ -12,6 +12,9 @@ import Navigation from './components/navbar/Navigation'
 import Footer from './components/footer/Footer'
 
 class App extends Component {
+  state = {
+    categories: ['mens', 'womens', 'kids', 'no-gi', 'mma&boxing', 'clothing']
+  }
   render() {
     return (
       <Router>
@@ -22,7 +25,7 @@ class App extends Component {
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             <Route path="/store-Homepage"
-                    render={props => <StoreHomePage {...props} />} 
+                    render={props => <StoreHomePage {...props} categories={this.state.categories}/>}
             />
             <Route path="/login" component={Login} />
           </Switch>
