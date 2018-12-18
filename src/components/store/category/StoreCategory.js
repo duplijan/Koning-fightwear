@@ -7,10 +7,6 @@ import { Wrapper,  Section } from '../store-styled-components';
 import { Select, SelectText, DropdownMenu } from './dropdown/styled-components';
 import { StyledHeader, ProductWrapper, ProductCard, ProductImage, ProductInfo, Price} from './category-styled-components';
 
-
-
-
-
 class StoreCategory extends Component {
   constructor(props){
     super(props)
