@@ -58,10 +58,8 @@ export const LoginInput= styled(Input)`
   &::-webkit-input-placeholder {
     font-size: 1em;
     color: #fff;
-}
+  }
 `
-
-
 export const TextArea= styled.input`
   width: 80%;
   padding:10px;
