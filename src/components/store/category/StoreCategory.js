@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -10,7 +10,6 @@ import { Main } from "../../home/Home-styled-components";
 import { Wrapper } from "../store-styled-components";
 import { Select, SelectText, DropdownMenu } from "./dropdown/styled-components";
 import { StyledHeader, ProductWrapper } from "./category-styled-components";
-//Section
 
 const StoreCategory = props => {
   const { name } = props.match.params;
@@ -40,7 +39,7 @@ const StoreCategory = props => {
     </Wrapper>
   );
 };
-=======
+
 import React, { Component} from 'react';
 
 import Dropdown from './dropdown'
@@ -137,26 +136,10 @@ class StoreCategory extends Component {
             </ProductCard>
 
           </ProductWrapper>
-          {/*
-            <ProductWrapper>
-              <ProductCard>
-                <ProductImage>
-                  <Image />
-                </ProductImage>
-                <ProductInfo>
-
-                </ProductInfo>
-                <Price>
-                </Price>
-              </ProductCard>
-            </ProductWrapper>
-
-            */}
         </Main>
       </Wrapper>
     )
   }
 }
->>>>>>> d7eff3040c50c84f27a3f6621f286b6caf9c2bcc
 
 export default StoreCategory;
