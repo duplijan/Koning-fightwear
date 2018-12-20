@@ -1,8 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./App.css";
 
-//COMPONENTS
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Home from "./components/home/Home";
@@ -32,7 +30,6 @@ class App extends Component {
             />
             <Route path="/login" component={Login} />
           </Switch>
-
           <Footer />
         </Fragment>
       </Router>
