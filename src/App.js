@@ -10,9 +10,6 @@ import Navigation from "./components/navbar/Navigation";
 import Footer from "./components/footer/Footer";
 
 class App extends Component {
-  state = {
-    categories: ["mens", "womens", "kids", "no-gi", "mma&boxing", "clothing"]
-  };
   render() {
     return (
       <Router>
