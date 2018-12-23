@@ -22,7 +22,7 @@ class App extends Component {
             <Route
               path="/store-Homepage"
               render={props => (
-                <StoreHomePage {...props} categories={this.state.categories} />
+                <StoreHomePage {...props} />
               )}
             />
             <Route path="/login" component={Login} />
