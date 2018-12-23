@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-
 import { ProductHeader } from "./product-styled-components";
 
 const ProductDetail = props => {
