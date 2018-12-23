@@ -20,9 +20,9 @@ class StoreHomePage extends Component {
           <Switch>
             <Route exact path={url} component={HomePage} />
             <Route
-              path={`${url}/category-:name`}
+              path={`${url}/category/:name`}
               render={props => (
-                <StoreCategory {...props} categories={this.props.categories} />
+                <StoreCategory {...props}  />
               )}
             />
           </Switch>
