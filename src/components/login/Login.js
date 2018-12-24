@@ -1,6 +1,15 @@
 import React from 'react'
 import { Main } from '../home/Home-styled-components'
-import { Wrapp, LoginHeader, LoginForm, LoginInput, Label, InputGroup, ChechBox, LoginButton, Group, HelpButton
+import { Wrapp, 
+        LoginHeader, 
+        LoginForm, 
+        LoginInput, 
+        Label, 
+        InputGroup, 
+        ChechBox, 
+        LoginButton, 
+        Group, 
+        HelpButton
 } from './Login-styled-components'
 
 const Login = () => {
