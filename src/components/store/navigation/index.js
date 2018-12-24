@@ -12,22 +12,22 @@ const Navbar = props => {
   return (
     <Navigation>
       <NavList>
-        <StyledLink to={`${url}/category/:id`}>
+        <StyledLink to={`${url}/category/:categoryId`}>
           <NavItem>MENS</NavItem>
         </StyledLink>
-        <StyledLink to={`${url}/category/:id`}>
+        <StyledLink to={`${url}/category/:categoryId`}>
           <NavItem>WOMENS</NavItem>
         </StyledLink>
-        <StyledLink to={`${url}/category/:id`}>
+        <StyledLink to={`${url}/category/:categoryId`}>
           <NavItem>KIDS</NavItem>
         </StyledLink>
-        <StyledLink to={`${url}/category/:id`}>
+        <StyledLink to={`${url}/category/:categoryId`}>
           <NavItem>NO-GI</NavItem>
         </StyledLink>
-        <StyledLink to={`${url}/category/:id`}>
+        <StyledLink to={`${url}/category/:categoryId`}>
           <NavItem>MMA & BOXING</NavItem>
         </StyledLink>
-        <StyledLink to={`${url}/category/:id`}>
+        <StyledLink to={`${url}/category/:categoryId`}>
           <NavItem>CLOTHING</NavItem>
         </StyledLink>
       </NavList>
